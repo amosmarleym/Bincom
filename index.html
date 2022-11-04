@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Bincom </title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.2/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/4890e4d38f.js" crossorigin="anonymous"></script>"
+    <link rel="stylesheet" href="https://fonts.goo0gle.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Roboto+Slab">
+    
+</head>
+<body>
+    <header class="header">
+        <nav>
+        <div class="container nav-section">
+            <div class="brand-and-navBtn">
+                <span class="brand-name">
+                    <b>Bincom Software developer<span class="cam"></span> </b>
+                </span>
+            </div>
+        </div>
+
+        </nav>
+        <section class="info-text">
+            <div class="name">
+            <h1>My Website Sample for Bincom.</h1
+           
+         <p><strong>I am Amos Adagboyi. I have a Bachelor of Science degree ,and I enjoy learning to code in my free time.</strong> </p>
+            <p><strong> I'm open to learning and adapting to work with the team. Freelance opportunities and contract jobs  </strong></p3>
+            
+        </section>
+    </div>
+        
+    </header>
+    <section class="gallery">
+        <div class="portfolio-menu">
+            <h2><  Software developer / ></h2>
+
+<p><strong>I Build full-stack Webapps and Crossplatform Mobile apps using react native, and also Restful Web Api's for fintech companies with the MERN stack. I also build quality responsive websites with a clean user interface.</strong></p>
+<p><strong> I'm open to learning and adapting to work with the team. Freelance opportunities and contract jobs  </strong></p>
+        </div>
+        <div class="portfolio-item">
+            <div class="item nature" data-aos="flip-left" data-aos-offset="200" data-aos-delay="100">
+                <img src="IMG_7027 (1).jpg" height="100" width="100">
+            </div>
+            <div class="item food" data-aos="flip-left" data-aos-offset="200" data-aos-delay="200">
+                <img src="IMG_20220704_105042_057.jpg" height="100" width="100">
+            </div>
+            <div class="item nature" data-aos="flip-left"data-aos-offset="200"data-aos-delay="300">
+                <img src="IMG_20220423_081137_761.jpg" height="100" width="100">
+            </div>
+            <div class="item nature" data-aos="flip-left"data-aos-offset="200"data-aos-delay="400">
+                <img src="IMG_7950.jpeg" height="100" width="100">
+            </div>
+            <div class="item nature"data-aos="flip-left"data-aos-offset="100"data-aos-delay="100">
+                <img src="IMG_7026.jpg" height="100" width="100">
+            </div>
+            
+            
+            
+            <div class="item food"data-aos="flip-left"data-aos-offset="100"data-aos-delay="400">
+                <img src="IMG_2799.jpeg" height="100" width="100">
+            </div>
+        </div>
+    </section>
+    
+        
+    </section>
+    
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="script.js"></script>
+    <script type="text/javascript">
+        $('.portfolio-item').isotope({
+            // options
+            itemSelector: '.item',
+            layoutMode: 'fitRows'
+        });
+        $('.portfolio-menu ul li').click(function(){
+            $('.portfolio-menu ul li').removeClass('active');
+            $(this).addClass('active');
+
+            var selector=$(this).attr('data-filter');
+            $('.portfolio-item').isotope({
+                filter:selector
+            });
+            return false;
+        });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>  
+</body>
+</html>
+
